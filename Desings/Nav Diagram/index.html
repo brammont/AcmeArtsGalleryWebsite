@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Hierarchy Diagram</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Navigation Hierarchy Diagram</h1>
+        <div class="diagram">
+            <div class="node home">
+                <p>Home (index.html)</p>
+                <div class="links">
+                    <div class="line"></div>
+                    <div class="child-links">
+                        <div class="arrow"></div>
+                        <div class="node"><p>All Paintings (paintings.php)</p></div>
+                        <div class="arrow"></div>
+                        <div class="node"><p>Filter by Style (style-filter.php)</p></div>
+                        <div class="arrow"></div>
+                        <div class="node"><p>Filter by Artist (artist-filter.php)</p></div>
+                        <div class="arrow"></div>
+                        <div class="node"><p>Search (search.php)</p></div>
+                        <div class="arrow"></div>
+                        <div class="node"><p>Insert New Painting (insert.php)</p></div>
+                        <div class="arrow"></div>
+                        <div class="node"><p>Edit / Delete Painting (edit-delete.php)</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

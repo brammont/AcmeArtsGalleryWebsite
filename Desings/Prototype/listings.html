@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme Arts - Paintings</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Acme Arts</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="filter-style.html">Filter by Style</a></li>
+                <li class="nav-item"><a class="nav-link" href="filter-artist.html">Filter by Artist</a></li>
+                <li class="nav-item"><a class="nav-link" href="search.html">Search Painting</a></li>
+                <li class="nav-item"><a class="nav-link" href="insert-update.html">Insert/Update Painting</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Paintings</h1>
+        <div class="form-group">
+            <label for="filterStyle">Filter by Style:</label>
+            <select id="filterStyle" class="form-control">
+                <option value="">Select Style</option>
+                <option value="impressionism">Impressionism</option>
+                <option value="cubism">Cubism</option>
+                <option value="surrealism">Surrealism</option>
+            </select>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Finished</th>
+                        <th>Artist</th>
+                        <th>Style</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Waterlilies and Japanese Bridge</td>
+                        <td>1899</td>
+                        <td>Claude Monet</td>
+                        <td>Impressionism</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm">Update</button>
+                            <button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mona Lisa</td>
+                        <td>1503</td>
+                        <td>Leonardo da Vinci</td>
+                        <td>Portrait</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm">Update</button>
+                            <button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
